@@ -1,0 +1,6 @@
+{
+  "name": "Expense Coach",
+  "description": "Automatically track and categorize personal expenses from Gmail purchase receipts and sync to Google Sheets with AI, featuring an Android app and WebAPK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="receiptGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#022c22" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for Android -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Receipt Body with Jagged Bottom -->
+  <g filter="url(#shadow)" transform="translate(116, 96)">
+    <path d="M 0 16 
+             C 0 7.16 7.16 0 16 0 
+             L 264 0 
+             C 272.84 0 280 7.16 280 16 
+             L 280 290 
+             L 256.6 276 
+             L 233.3 290 
+             L 210 276 
+             L 186.6 290 
+             L 163.3 276 
+             L 140 290 
+             L 116.6 276 
+             L 93.3 290 
+             L 70 276 
+             L 46.6 290 
+             L 23.3 276 
+             L 0 290 Z" 
+          fill="url(#receiptGrad)" />
+
+    <!-- Receipt Header Bar -->
+    <rect x="28" y="32" width="90" height="12" rx="6" fill="#059669" />
+    <rect x="130" y="32" width="120" height="12" rx="6" fill="#cbd5e1" />
+
+    <!-- Dashed Separator -->
+    <line x1="28" y1="68" x2="252" y2="68" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6" />
+
+    <!-- Line items -->
+    <rect x="28" y="94" width="140" height="10" rx="5" fill="#64748b" />
+    <rect x="198" y="94" width="54" height="10" rx="5" fill="#334155" />
+
+    <rect x="28" y="122" width="110" height="10" rx="5" fill="#64748b" />
+    <rect x="206" y="122" width="46" height="10" rx="5" fill="#334155" />
+
+    <rect x="28" y="150" width="130" height="10" rx="5" fill="#64748b" />
+    <rect x="202" y="150" width="50" height="10" rx="5" fill="#334155" />
+
+    <!-- Total highlight line -->
+    <rect x="28" y="190" width="224" height="42" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5" />
+    <text x="42" y="217" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#065f46">TOTAL</text>
+    <text x="238" y="217" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#047857" text-anchor="end">$42.80</text>
+  </g>
+
+  <!-- AI Sparkle Badge on top right -->
+  <g transform="translate(330, 80)">
+    <circle cx="36" cy="36" r="36" fill="#10b981" />
+    <circle cx="36" cy="36" r="32" fill="#059669" />
+    <path d="M 36 14 
+             C 36 26 46 36 58 36 
+             C 46 36 36 46 36 58 
+             C 36 46 26 36 14 36 
+             C 26 36 36 26 36 14 Z" 
+          fill="#ffffff" />
+  </g>
+</svg>

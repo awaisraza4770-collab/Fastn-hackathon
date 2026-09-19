@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Expense Coach</string>
+    <string name="tagline">Receipts to Google Sheets with AI</string>
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_review">Review Hub</string>
+    <string name="tab_sheets">Google Sheets</string>
+    <string name="tab_coach">AI Coach</string>
+    <string name="scan_demo">Scan Inbox</string>
+</resources>
